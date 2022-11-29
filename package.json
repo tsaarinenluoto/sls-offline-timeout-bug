@@ -4,7 +4,6 @@
   },
   "name": "sls-offline-timeout-bug",
   "devDependencies": {
-    "serverless-dotenv-plugin": "^4.0.2",
     "serverless-offline": "^10.0.2",
     "serverless-python-requirements": "^5.3.1"
   }
