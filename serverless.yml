@@ -12,7 +12,6 @@ functions:
     timeout: 5
     events:
       - schedule: rate(1 minute)
-#      - schedule: cron(42 * * * ? *)
 
 plugins:
   - serverless-offline
