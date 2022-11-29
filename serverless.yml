@@ -1,0 +1,18 @@
+service: sls-offline-bug
+frameworkVersion: '3'
+useDotenv: true
+
+provider:
+  name: aws
+  runtime: python3.9
+
+functions:
+  MyFun:
+    handler: main.handler
+    timeout: 5
+    events:
+      - schedule: rate(1 minute)
+#      - schedule: cron(42 * * * ? *)
+
+plugins:
+  - serverless-offline
